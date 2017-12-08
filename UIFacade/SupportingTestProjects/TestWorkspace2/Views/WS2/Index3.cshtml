@@ -1,0 +1,89 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Workspace 2 - Home / Index</title>
+    <script src="~/Scripts/jquery-2.0.0.min.js"></script>
+    <script src="~/Scripts/postmessage.js"></script>
+    <script src="~/Scripts/date.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function post(postData) {
+                $.pm({
+                    target: window.parent,
+                    type: "dataract-message",
+                    data: postData,
+                    url: document.referrer,
+                    success: function (returnedData) {
+                        var log = '<li>' + new Date().toString("HH:mm:ss") + ' >> '  +  postData.claimNumber + ' >> Message Posted To Workspace Manager ( Message Received : ' + returnedData.message + ' )</li>';
+                        $('#LogList').append(log);
+                    }
+                });
+            };
+            
+            $('#OpenRelatedWorkInE5').click(function () {
+                post(getPostData());
+            });
+            
+            function getPostData() {
+                var value = $("#ClaimNumber").val().trim();
+                return {
+                    messageType: "openRelatedWork",
+                    workspaceId: 2,
+                    claimNumber: value
+                };
+            }
+        });
+    </script>
+    
+    <style type="text/css">
+        body {
+            line-height: 1;
+            font-family: 'CartoGothic', 'Capriola', 'Trebuchet MS', 'Calibri';
+            font-size: 14px;
+        }
+        li .success {
+            color: green;
+        }
+        li .failed {
+            color: maroon;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Non e5 Application Screen</h1>
+
+        <div id="main-content">
+            <p>Claim Number of This System : </p>
+            <input type=text id="ClaimNumber" list=claimNumbers >
+            <datalist id=claimNumbers >
+                <option> 236789
+                <option> 549806
+                <option> 384729
+                <option> 983247
+                <option> 458903
+            </datalist>
+            <input type="button" id="OpenRelatedWorkInE5" value="Open Related Work(s) in e5" /><br /><br /><br />
+            
+            <p>Demo Claim Numbers : </p>
+            <ul id="SampleClaimNumbersList">
+                <li>236789</li>
+                <li>549806</li>
+                <li>384729</li>
+                <li>983247</li>
+                <li>458903</li>                
+            </ul>
+            <br /><br />
+            
+            <p>Event Log : </p>
+            <ul id="LogList">
+            </ul>
+
+        </div>
+    </body>
+</html>

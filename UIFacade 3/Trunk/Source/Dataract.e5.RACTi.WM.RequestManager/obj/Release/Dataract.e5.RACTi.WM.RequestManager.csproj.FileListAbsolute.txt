@@ -1,0 +1,11 @@
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\bin\Release\Dataract.e5.RACTi.WM.RequestManager.dll.config
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\bin\Release\Dataract.e5.RACTi.WM.RequestManager.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\bin\Release\Dataract.e5.RACTi.WM.RequestManager.pdb
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\bin\Release\Dataract.e5.WM.Interface.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\bin\Release\Dataract.e5.WM.Interface.pdb
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\obj\Release\Dataract.e5.RACTi.WM.RequestManager.csprojResolveAssemblyReference.cache
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\obj\Release\Dataract.e5.RACTi.WM.RequestManager.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 3\Trunk\Source\Dataract.e5.RACTi.WM.RequestManager\obj\Release\Dataract.e5.RACTi.WM.RequestManager.pdb

@@ -1,0 +1,147 @@
+﻿@using Kendo.Mvc.UI
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Split Workspace Layout</title>
+        @*@Styles.Render("~/Content/css")*@
+        @*@Scripts.Render("~/bundles/modernizr")*@
+
+        <link href="~/Styles/Shared.MasterLayout4.css" rel="stylesheet" />
+        <link href="~/Components/Kendo/Content/kendo.common.min.css" rel="stylesheet" />
+        <link href="~/Components/Kendo/Content/kendo.default.min.css" rel="stylesheet" />
+        @RenderSection("StyleSheets", false)
+            
+        <!--<script src="~/Scripts/jquery-1.3.2.min.js"></script>-->
+        <script src="~/Scripts/jquery-2.0.0.min.js"></script>
+        <script src="~/Scripts/jquery.cookies.2.2.0.min.js"></script>
+        <script src="~/Scripts/underscore-min.js"></script>
+        <script src="~/Scripts/postmessage.js"></script>
+        <!--<script src="~/Components/Kendo/Scripts/kendo.web.min.js"></script>-->
+        <script src="~/Components/Kendo/Scripts/kendo.all.min.js"></script>
+        <!--<script src="~/Components/Kendo/Scripts/kendo.aspnetmvc.min.js"></script>-->
+        
+        @RenderSection("JavaScripts", false)
+    </head>
+    <body>
+        <div id="page-container">
+        @(
+    
+        Html.Kendo().Splitter()
+            .Name("Horizontal")
+            .Orientation(SplitterOrientation.Horizontal)
+            .Events(events => events
+                  .Collapse("collapse")
+                  .Resize("resize")
+                  .Expand("expand")
+            )
+            .Panes(hpanes =>
+                {
+                    hpanes.Add()
+                          .HtmlAttributes(new { id = "pane-left" })
+                          .Scrollable(true)
+                          .Collapsible(true)
+                          .Size("50%")
+                          .Content(
+                              Html.Kendo().Splitter()
+                                  .Name("Vertical-Left")
+                                  .Orientation(SplitterOrientation.Vertical)
+                                  .Panes(vlpanes =>
+                                      {
+                                          vlpanes.Add()
+                                                 .HtmlAttributes(new { id = "pane-left--top" })
+                                                 .Scrollable(true)
+                                                 .Collapsible(false)
+                                                 .Content(
+                                                    Html.Kendo().TabStrip()
+                                                        .Name("panel-left--top-tabstrip")
+                                                        .Animation(false)
+                                                        .Items(tabstrip =>
+                                                        {
+                                                            tabstrip.Add().Text("Home")
+                                                                .Selected(true)
+                                                                .Content(
+                                                                    @<div class="tab-content">
+                                                                         @RenderSection("TabStrip1Home", false);
+                                                                     </div>
+                                                            );
+                                                        }).ToString()
+                                              );
+                                          vlpanes.Add()
+                                                 .HtmlAttributes(new { id = "pane-left--bottom" }) 
+                                                 .Scrollable(true)
+                                                 .Collapsible(true)
+                                                 .Size("150px")
+                                                 .Content(
+                                                     @<div id="pane-left--bottom-content">
+                                                          @RenderSection("WorkSpace1_Bottom", true)
+                                                      </div>
+                                                 );
+                                      }
+                                  ).ToHtmlString()
+                        );
+
+                    hpanes.Add()
+                          .HtmlAttributes(new { id = "pane-right" })
+                          .Scrollable(true)
+                          .Collapsible(true)
+                          .Size("70%")
+                          .Content(
+                              Html.Kendo().Splitter()
+                                  .Name("Vertical-Right")
+                                  .Orientation(SplitterOrientation.Vertical)
+                                  .Panes(vrpanes =>
+                                      {
+                                          vrpanes.Add()
+                                                 .HtmlAttributes(new { id = "pane-right--top" })
+                                                 .Scrollable(true)
+                                                 .Collapsible(false)
+                                                 .Content(
+                                                    Html.Kendo().TabStrip()
+                                                        .Name("panel-right--top-tabstrip")
+                                                        .Animation(false)
+                                                        .Items(tabstrip =>
+                                                        {
+                                                            tabstrip.Add().Text("Home")
+                                                                .Selected(true)
+                                                                .Content(
+                                                                    @<div class="tab-content">
+                                                                         @RenderSection("TabStrip2Home", false);
+                                                                     </div>
+                                                            );
+                                                        }).ToString()
+                                              );
+                                          vrpanes.Add()
+                                                 .HtmlAttributes(new { id = "pane-right--bottom" })
+                                                 .Scrollable(true)
+                                                 .Collapsible(true)
+                                                 .Size("150px")
+                                                 .Content(
+                                                     @<div id="pane-right--bottom-content">
+                                                          @RenderSection("WorkSpace2_Bottom", true)
+                                                      </div>
+                                                 );
+                                      }
+                                  ).ToHtmlString()
+                        );
+                })
+        )
+        </div>
+        @RenderBody()
+        <script type="text/javascript">
+            function resize(e) {
+                //alert("Resized :: Splitter <b>#" + $('#pane-left').attr("width") + "</b>");
+            }
+
+            function expand(e) {
+                //alert("Expanded :: Pane <b>#" + e.pane.id + "</b> from splitter <b>#" + this.element[0].id + "</b> expanded");
+            }
+
+            function collapse(e) {
+                //alert("Collapsed :: Pane <b>#" + e.pane.id + "</b> from splitter <b>#" + this.element[0].id + "</b> collapsed");
+            }
+        </script>
+    </body>
+</html>

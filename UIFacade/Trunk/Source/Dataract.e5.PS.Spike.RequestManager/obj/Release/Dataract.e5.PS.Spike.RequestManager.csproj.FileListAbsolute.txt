@@ -1,0 +1,4 @@
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade\Trunk\Source\Dataract.e5.PS.Spike.RequestManager\bin\Release\Dataract.e5.PS.Spike.RequestManager.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade\Trunk\Source\Dataract.e5.PS.Spike.RequestManager\bin\Release\Dataract.e5.PS.Spike.RequestManager.pdb
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade\Trunk\Source\Dataract.e5.PS.Spike.RequestManager\obj\Release\Dataract.e5.PS.Spike.RequestManager.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade\Trunk\Source\Dataract.e5.PS.Spike.RequestManager\obj\Release\Dataract.e5.PS.Spike.RequestManager.pdb

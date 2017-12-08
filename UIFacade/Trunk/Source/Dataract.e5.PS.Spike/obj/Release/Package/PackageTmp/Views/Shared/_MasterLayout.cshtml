@@ -1,0 +1,150 @@
+﻿@using Kendo.Mvc.UI
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Split Workspace Layout</title>
+        @*@Styles.Render("~/Content/css")*@
+        @*@Scripts.Render("~/bundles/modernizr")*@
+
+        <link href="~/Styles/Shared.MasterLayout.css" rel="stylesheet" />
+        <link href="/Components/Kendo/Content/kendo.common.min.css" rel="stylesheet" />
+        <link href="~/Components/Kendo/Content/kendo.default.min.css" rel="stylesheet" />
+        @RenderSection("StyleSheets", false)
+            
+        <script src="/Scripts/jquery-2.0.0.min.js"></script>
+        <!--<script src="/Components/Kendo/Scripts/kendo.web.min.js"></script>-->
+        <script src="~/Components/Kendo/Scripts/kendo.all.min.js"></script>
+        <!--<script src="/Components/Kendo/Scripts/kendo.aspnetmvc.min.js"></script>-->
+        @RenderSection("JavaScripts", false)
+    </head>
+    <body>
+        <div id="page-container">
+        @(
+    
+        Html.Kendo().Splitter()
+            .Name("Horizontal")
+            .Orientation(SplitterOrientation.Horizontal)
+            .Panes(hpanes =>
+                {
+                    hpanes.Add()
+                          .HtmlAttributes(new { id = "pane-left" })
+                          .Scrollable(true)
+                          .Collapsible(true)
+                          .Content(
+                              Html.Kendo().Splitter()
+                                  .Name("Vertical-Left")
+                                  .Orientation(SplitterOrientation.Vertical)
+                                  .Panes(vlpanes =>
+                                      {
+                                          vlpanes.Add()
+                                                 .HtmlAttributes(new { id = "pane-left--top" })
+                                                 .Scrollable(true)
+                                                 .Collapsible(false)
+                                                 .Content(
+                                                     Html.Kendo().Splitter()
+                                                         .Name("Vertical-Left-Horizontal")
+                                                         .Orientation(SplitterOrientation.Horizontal)
+                                                         .Panes(vlthpanes =>
+                                                             {
+                                                                 vlthpanes.Add()
+                                                                          .HtmlAttributes(new {id = "pane-left--top--left"})
+                                                                          .Scrollable(true)
+                                                                          .Collapsible(true)
+                                                                          .Size("150px")
+                                                                          .Content(
+                                                                              @<div id="pane-left--top--left-content">
+                                                                                   @RenderSection("WorkSpace1_SideBar", false)
+                                                                               </div>
+                                                                          );
+                                                                 vlthpanes.Add()
+                                                                          .HtmlAttributes(new {id = "pane-left--top--right"})
+                                                                          .Scrollable(true)
+                                                                          .Collapsible(false)
+                                                                          .Content(
+                                                                              @<div id="pane-left--top--right-content">
+                                                                                   @RenderSection("WorkSpace1", true)
+                                                                               </div>
+                                                                          );
+                                                                               
+                                                             }
+                                                         ).ToString()
+                                              );
+                                          vlpanes.Add()
+                                                 .HtmlAttributes(new { id = "pane-left--bottom" })
+                                                 .Scrollable(true)
+                                                 .Collapsible(true)
+                                                 .Size("150px")
+                                                 .Content(
+                                                     @<div id="pane-left--bottom-content">
+                                                          @RenderSection("WorkSpace1_BottomBar", false)
+                                                      </div>
+                                                 );
+                                      }
+                                  ).ToHtmlString()
+                        );
+
+                    hpanes.Add()
+                          .HtmlAttributes(new { id = "pane-right" })
+                          .Scrollable(true)
+                          .Collapsible(true)
+                          .Content(
+                              Html.Kendo().Splitter()
+                                  .Name("Vertical-Right")
+                                  .Orientation(SplitterOrientation.Vertical)
+                                  .Panes(vrpanes =>
+                                      {
+                                          vrpanes.Add()
+                                                 .HtmlAttributes(new { id = "pane-right--top" })
+                                                 .Scrollable(true)
+                                                 .Collapsible(false)
+                                                 .Content(
+                                                     Html.Kendo().Splitter()
+                                                         .Name("Vertical-Right-Horizontal")
+                                                         .Orientation(SplitterOrientation.Horizontal)
+                                                         .Panes(vlthpanes =>
+                                                             {
+                                                                 vlthpanes.Add()
+                                                                          .HtmlAttributes(new {id = "pane-right--top--left"})
+                                                                          .Scrollable(true)
+                                                                          .Collapsible(true)
+                                                                          .Size("150px")
+                                                                          .Content(
+                                                                              @<div id="pane-right--top--left-content">
+                                                                                   @RenderSection("WorkSpace2_SideBar", false)
+                                                                               </div>
+                                                                          );
+                                                                 vlthpanes.Add()
+                                                                          .HtmlAttributes(new {id = "pane-right--top--right"})
+                                                                          .Scrollable(true)
+                                                                          .Collapsible(false)
+                                                                          .Content(
+                                                                              @<div id="pane-right--top--right-content">
+                                                                                   @RenderSection("WorkSpace2", true)
+                                                                               </div>
+                                                                     );
+                                    
+                                                             }
+                                                         ).ToString()
+                                              );
+                                          vrpanes.Add()
+                                                 .HtmlAttributes(new { id = "pane-right--bottom" })
+                                                 .Scrollable(true)
+                                                 .Collapsible(true)
+                                                 .Size("150px")
+                                                 .Content(
+                                                     @<div id="pane-right--bottom-content">
+                                                          @RenderSection("WorkSpace2_BottomBar", false)
+                                                      </div>
+                                                 );
+                                      }
+                                  ).ToHtmlString()
+                        );
+                })
+        )
+        </div>
+        @RenderBody()
+    </body>
+</html>

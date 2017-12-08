@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.WM", "..\Dataract.e5.WM\Dataract.e5.WM.csproj", "{400B422D-ACCF-48CA-A316-4A99612B22C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.WM.Interface", "..\Dataract.e5.WM.Interface\Dataract.e5.WM.Interface.csproj", "{A455D6BF-5E19-44A8-B1FA-7CBCCAE72DE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{286F0D20-261D-469F-80B5-C2E6FDAE09A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dummy", "Dummy", "{C7CF3C70-EDD4-44F4-AA58-9131F2129E42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface Implementation", "Interface Implementation", "{E68D0420-5ABE-4CC2-8F23-C44D8E694B23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.RACTi.WM.RequestManager", "..\Dataract.e5.RACTi.WM.RequestManager\Dataract.e5.RACTi.WM.RequestManager.csproj", "{FF71D784-9D97-470F-A2A8-441AE9DDACED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.WM.Test.Workspace1", "..\Dataract.e5.WM.Test.Workspace1\Dataract.e5.WM.Test.Workspace1.csproj", "{78F0B418-3A91-4875-80D0-A6488B4F13DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.WM.Test.Workspace2", "..\Dataract.e5.WM.Test.Workspace2\Dataract.e5.WM.Test.Workspace2.csproj", "{8E492A64-D065-46FC-BE97-D01B7C904487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.Fake.WM.RequestManager", "..\Dataract.e5.Fake.RequestManager\Dataract.e5.Fake.WM.RequestManager.csproj", "{BE849EE3-4F3F-49EC-8DD4-CA63D97323EC}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://sydtfs2010:8080/tfs/professional%20services%20shared
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Dataract.e5.Fake.RequestManager\\Dataract.e5.Fake.WM.RequestManager.csproj
+		SccProjectTopLevelParentUniqueName1 = UIFacade\u00203.sln
+		SccProjectName1 = ../Dataract.e5.Fake.RequestManager
+		SccLocalPath1 = ..\\Dataract.e5.Fake.RequestManager
+		SccProjectUniqueName2 = ..\\Dataract.e5.RACTi.WM.RequestManager\\Dataract.e5.RACTi.WM.RequestManager.csproj
+		SccProjectTopLevelParentUniqueName2 = UIFacade\u00203.sln
+		SccProjectName2 = ../Dataract.e5.RACTi.WM.RequestManager
+		SccLocalPath2 = ..\\Dataract.e5.RACTi.WM.RequestManager
+		SccProjectUniqueName3 = ..\\Dataract.e5.WM.Interface\\Dataract.e5.WM.Interface.csproj
+		SccProjectTopLevelParentUniqueName3 = UIFacade\u00203.sln
+		SccProjectName3 = ../Dataract.e5.WM.Interface
+		SccLocalPath3 = ..\\Dataract.e5.WM.Interface
+		SccProjectUniqueName4 = ..\\Dataract.e5.WM.Test.Workspace1\\Dataract.e5.WM.Test.Workspace1.csproj
+		SccProjectTopLevelParentUniqueName4 = UIFacade\u00203.sln
+		SccProjectName4 = ../Dataract.e5.WM.Test.Workspace1
+		SccLocalPath4 = ..\\Dataract.e5.WM.Test.Workspace1
+		SccProjectUniqueName5 = ..\\Dataract.e5.WM.Test.Workspace2\\Dataract.e5.WM.Test.Workspace2.csproj
+		SccProjectTopLevelParentUniqueName5 = UIFacade\u00203.sln
+		SccProjectName5 = ../Dataract.e5.WM.Test.Workspace2
+		SccLocalPath5 = ..\\Dataract.e5.WM.Test.Workspace2
+		SccProjectUniqueName6 = ..\\Dataract.e5.WM\\Dataract.e5.WM.csproj
+		SccProjectTopLevelParentUniqueName6 = UIFacade\u00203.sln
+		SccProjectName6 = ../Dataract.e5.WM
+		SccLocalPath6 = ..\\Dataract.e5.WM
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{400B422D-ACCF-48CA-A316-4A99612B22C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400B422D-ACCF-48CA-A316-4A99612B22C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400B422D-ACCF-48CA-A316-4A99612B22C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400B422D-ACCF-48CA-A316-4A99612B22C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A455D6BF-5E19-44A8-B1FA-7CBCCAE72DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A455D6BF-5E19-44A8-B1FA-7CBCCAE72DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A455D6BF-5E19-44A8-B1FA-7CBCCAE72DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A455D6BF-5E19-44A8-B1FA-7CBCCAE72DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF71D784-9D97-470F-A2A8-441AE9DDACED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF71D784-9D97-470F-A2A8-441AE9DDACED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF71D784-9D97-470F-A2A8-441AE9DDACED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF71D784-9D97-470F-A2A8-441AE9DDACED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E492A64-D065-46FC-BE97-D01B7C904487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E492A64-D065-46FC-BE97-D01B7C904487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E492A64-D065-46FC-BE97-D01B7C904487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E492A64-D065-46FC-BE97-D01B7C904487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE849EE3-4F3F-49EC-8DD4-CA63D97323EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE849EE3-4F3F-49EC-8DD4-CA63D97323EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE849EE3-4F3F-49EC-8DD4-CA63D97323EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE849EE3-4F3F-49EC-8DD4-CA63D97323EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A455D6BF-5E19-44A8-B1FA-7CBCCAE72DE0} = {286F0D20-261D-469F-80B5-C2E6FDAE09A3}
+		{400B422D-ACCF-48CA-A316-4A99612B22C5} = {286F0D20-261D-469F-80B5-C2E6FDAE09A3}
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC} = {C7CF3C70-EDD4-44F4-AA58-9131F2129E42}
+		{8E492A64-D065-46FC-BE97-D01B7C904487} = {C7CF3C70-EDD4-44F4-AA58-9131F2129E42}
+		{FF71D784-9D97-470F-A2A8-441AE9DDACED} = {E68D0420-5ABE-4CC2-8F23-C44D8E694B23}
+		{BE849EE3-4F3F-49EC-8DD4-CA63D97323EC} = {E68D0420-5ABE-4CC2-8F23-C44D8E694B23}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_BuildVersioningStyle = None.None.YearDayOfYear.Increment
+		BuildVersion_UpdateFileVersion = True
+		BuildVersion_AssemblyInfoFilename = VersionInfo.cs
+	EndGlobalSection
+EndGlobal

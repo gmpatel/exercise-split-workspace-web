@@ -1,0 +1,59 @@
+﻿html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#jqxTabsLeft {
+    overflow: hidden;
+}
+
+#jqxTabsLeft div {
+    overflow: hidden;
+}
+
+#jqxTabsLeftBottom {
+    overflow: hidden;
+}
+
+#jqxTabsLeftBottom div {
+    overflow: hidden;
+}
+
+#jqxTabsRight {
+    overflow: hidden;
+}
+
+#jqxTabsRight div {
+    overflow: hidden;
+}
+
+#jqxTabsRightBottom {
+    overflow: hidden;
+}
+
+#jqxTabsRightBottom div {
+    overflow: hidden;
+}
+
+#TestButton {
+    float: right; 
+    text-align: center; 
+    margin-top: 4px; 
+    margin-right: 10px;    
+}
+
+.jqxTabsContentIframe {
+    height: calc(100% - 30px);
+    width: 100%; 
+    border: none 0px; 
+}
+
+.jqxTabsHeader {
+    height: 30px;
+    background-color: gainsboro;
+    display: block;
+}

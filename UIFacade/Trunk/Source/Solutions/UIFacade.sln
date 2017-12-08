@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWorkspace1", "..\..\..\SupportingTestProjects\TestWorkspace1\TestWorkspace1.csproj", "{78F0B418-3A91-4875-80D0-A6488B4F13DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWorkspace2", "..\..\..\SupportingTestProjects\TestWorkspace2\TestWorkspace2.csproj", "{8E492A64-D065-46FC-BE97-D01B7C904487}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Workspaces", "Test Workspaces", "{CE7ADCA4-5CCE-4080-B0DA-4529FD773936}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dataract.e5.PS.Spike", "Dataract.e5.PS.Spike", "{A976C307-E2D2-4DDD-B200-5B80CC8E7116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.PS.Spike", "..\Dataract.e5.PS.Spike\Dataract.e5.PS.Spike.csproj", "{6CFB8C37-0649-4CB5-BF18-913CA010AAF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.PS.Spike.RequestManager", "..\Dataract.e5.PS.Spike.RequestManager\Dataract.e5.PS.Spike.RequestManager.csproj", "{AC7FEBD7-1594-45C6-8858-821D9BBCB678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.PS.Spike.Interfaces", "..\Dataract.e5.PS.Spike.IRequestManager\Dataract.e5.PS.Spike.Interfaces.csproj", "{A18CE200-B83A-4E93-8AFA-F6FA7514D837}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dataract.e5.RACTi.WSM.Worker", "..\RACTi.WSM.Worker\Dataract.e5.RACTi.WSM.Worker.csproj", "{4B549A57-2402-4963-8333-CF20954078BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestKendoUi", "..\..\..\SupportingTestProjects\TestKendoUi\TestKendoUi.csproj", "{D11EDBBD-9C1C-48D9-83B4-64859D8C875B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://sydtfs2010:8080/tfs/professional%20services%20shared
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\..\\SupportingTestProjects\\TestWorkspace1\\TestWorkspace1.csproj
+		SccProjectTopLevelParentUniqueName1 = UIFacade.sln
+		SccProjectName1 = ../../../SupportingTestProjects/TestWorkspace1
+		SccLocalPath1 = ..\\..\\..\\SupportingTestProjects\\TestWorkspace1
+		SccProjectUniqueName2 = ..\\..\\..\\SupportingTestProjects\\TestWorkspace2\\TestWorkspace2.csproj
+		SccProjectTopLevelParentUniqueName2 = UIFacade.sln
+		SccProjectName2 = ../../../SupportingTestProjects/TestWorkspace2
+		SccLocalPath2 = ..\\..\\..\\SupportingTestProjects\\TestWorkspace2
+		SccProjectUniqueName3 = ..\\Dataract.e5.PS.Spike\\Dataract.e5.PS.Spike.csproj
+		SccProjectTopLevelParentUniqueName3 = UIFacade.sln
+		SccProjectName3 = ../Dataract.e5.PS.Spike
+		SccLocalPath3 = ..\\Dataract.e5.PS.Spike
+		SccProjectUniqueName4 = ..\\Dataract.e5.PS.Spike.RequestManager\\Dataract.e5.PS.Spike.RequestManager.csproj
+		SccProjectTopLevelParentUniqueName4 = UIFacade.sln
+		SccProjectName4 = ../Dataract.e5.PS.Spike.RequestManager
+		SccLocalPath4 = ..\\Dataract.e5.PS.Spike.RequestManager
+		SccProjectUniqueName5 = ..\\Dataract.e5.PS.Spike.IRequestManager\\Dataract.e5.PS.Spike.Interfaces.csproj
+		SccProjectTopLevelParentUniqueName5 = UIFacade.sln
+		SccProjectName5 = ../Dataract.e5.PS.Spike.IRequestManager
+		SccLocalPath5 = ..\\Dataract.e5.PS.Spike.IRequestManager
+		SccProjectUniqueName6 = ..\\RACTi.WSM.Worker\\Dataract.e5.RACTi.WSM.Worker.csproj
+		SccProjectTopLevelParentUniqueName6 = UIFacade.sln
+		SccProjectName6 = ../RACTi.WSM.Worker
+		SccLocalPath6 = ..\\RACTi.WSM.Worker
+		SccProjectUniqueName7 = ..\\..\\..\\SupportingTestProjects\\TestKendoUi\\TestKendoUi.csproj
+		SccProjectTopLevelParentUniqueName7 = UIFacade.sln
+		SccProjectName7 = ../../../SupportingTestProjects/TestKendoUi
+		SccLocalPath7 = ..\\..\\..\\SupportingTestProjects\\TestKendoUi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E492A64-D065-46FC-BE97-D01B7C904487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E492A64-D065-46FC-BE97-D01B7C904487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E492A64-D065-46FC-BE97-D01B7C904487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E492A64-D065-46FC-BE97-D01B7C904487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFB8C37-0649-4CB5-BF18-913CA010AAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFB8C37-0649-4CB5-BF18-913CA010AAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFB8C37-0649-4CB5-BF18-913CA010AAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFB8C37-0649-4CB5-BF18-913CA010AAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC7FEBD7-1594-45C6-8858-821D9BBCB678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7FEBD7-1594-45C6-8858-821D9BBCB678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7FEBD7-1594-45C6-8858-821D9BBCB678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7FEBD7-1594-45C6-8858-821D9BBCB678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18CE200-B83A-4E93-8AFA-F6FA7514D837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18CE200-B83A-4E93-8AFA-F6FA7514D837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18CE200-B83A-4E93-8AFA-F6FA7514D837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18CE200-B83A-4E93-8AFA-F6FA7514D837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B549A57-2402-4963-8333-CF20954078BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B549A57-2402-4963-8333-CF20954078BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B549A57-2402-4963-8333-CF20954078BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B549A57-2402-4963-8333-CF20954078BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11EDBBD-9C1C-48D9-83B4-64859D8C875B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11EDBBD-9C1C-48D9-83B4-64859D8C875B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11EDBBD-9C1C-48D9-83B4-64859D8C875B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11EDBBD-9C1C-48D9-83B4-64859D8C875B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E492A64-D065-46FC-BE97-D01B7C904487} = {CE7ADCA4-5CCE-4080-B0DA-4529FD773936}
+		{78F0B418-3A91-4875-80D0-A6488B4F13DC} = {CE7ADCA4-5CCE-4080-B0DA-4529FD773936}
+		{D11EDBBD-9C1C-48D9-83B4-64859D8C875B} = {CE7ADCA4-5CCE-4080-B0DA-4529FD773936}
+		{6CFB8C37-0649-4CB5-BF18-913CA010AAF4} = {A976C307-E2D2-4DDD-B200-5B80CC8E7116}
+		{AC7FEBD7-1594-45C6-8858-821D9BBCB678} = {A976C307-E2D2-4DDD-B200-5B80CC8E7116}
+		{A18CE200-B83A-4E93-8AFA-F6FA7514D837} = {A976C307-E2D2-4DDD-B200-5B80CC8E7116}
+		{4B549A57-2402-4963-8333-CF20954078BB} = {A976C307-E2D2-4DDD-B200-5B80CC8E7116}
+	EndGlobalSection
+EndGlobal

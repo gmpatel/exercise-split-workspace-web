@@ -1,0 +1,122 @@
+﻿@import url(/Resources/Fonts/FontFace.css);
+
+body, html {
+    margin:0;
+    height: 100%;
+    font-family: Verdana;
+    font-size: small;
+}
+
+html {
+    overflow:hidden;
+}
+
+body {
+    line-height: 1;
+    font-family: 'CartoGothic', 'Capriola', 'Trebuchet MS', 'Calibri';
+    font-size: 14px;
+}
+
+#page-container {
+    background-color:#ccc;
+    height: 100%;
+}       
+
+#Horizontal {
+    height: 100%;
+    border: 0px;
+}
+
+#Vertical-Left {
+    height: 100%;
+    border: 0px;
+}
+
+#Vertical-Left-Horizontal {
+    height: 100%;
+    border: 0px;
+}
+
+#Vertical-Right-Horizontal {
+    height: 100%;
+    border: 0px;
+}
+
+#Vertical-Right {
+    height: 100%;
+    border: 0px;
+}
+
+#pane-left--top {
+    height: 100%;
+    background-color: beige;
+    overflow: hidden;
+    display: block;
+}
+
+#pane-left--bottom {
+    height: 100%;
+    background-color: beige;
+    overflow: hidden;
+    display: block;
+}
+
+#pane-left--bottom-content {
+    height: 100%;
+    background-color: darkgrey;
+    overflow: hidden;
+    display: block;
+}
+
+#pane-right--top {
+    height: 100%;
+    background-color: gainsboro;
+    overflow: hidden;
+    display: block;
+}
+
+#pane-right--bottom {
+    height: 100%;
+    background-color: beige;
+    overflow: hidden;
+    display: block;
+}
+
+#pane-right--bottom-content {
+    height: 100%;
+    background-color: darkgrey;
+    overflow: hidden;
+    display: block;
+}
+
+#panel-left--top-tabstrip {
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+#panel-left--top-tabstrip div {
+    padding: 0px;
+    height: calc(100% - 43px) !important;
+    overflow: hidden !important;
+    display: block;
+}
+
+#panel-right--top-tabstrip {
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+#panel-right--top-tabstrip div {
+    padding: 0px;
+    height: calc(100% - 43px) !important;
+    overflow: hidden !important;
+    display: block;
+}
+
+.tab-content {
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}

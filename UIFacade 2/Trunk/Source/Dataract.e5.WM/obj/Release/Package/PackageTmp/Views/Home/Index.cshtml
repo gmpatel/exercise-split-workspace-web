@@ -1,0 +1,82 @@
+﻿@{
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+@***********************************************************************************************************@
+
+@* StyleSheets Section >> View . Home . Index >> Add If Any Custom StyleSheets For This View               *@
+
+@***********************************************************************************************************@
+
+@section StyleSheets { 
+    @{
+        <link href="~/ViewStyles/Home.Index.css" rel="stylesheet" />
+    } 
+}
+
+
+
+
+@***********************************************************************************************************@
+
+@* JavaScripts Section >> View . Home . Index >> Add If Any Custom JavaScripts For This View               *@
+
+@***********************************************************************************************************@
+
+@section JavaScripts { 
+    @{
+        <script src="~/ViewScripts/Home.Index.js"></script>
+    } 
+}
+
+
+
+
+@***********************************************************************************************************@
+
+@* WorkSpace1 Sections >> View . Home . Index >> Customize Work Space 1 For This View Using Sections Below *@
+
+@***********************************************************************************************************@
+
+@section TabStrip1Home
+{
+    <div class="workspace-home-header">
+        <input type="text" id="WS1HomeURL" class="workspace-home-header-text" value="gm-pc:90" />         
+        <input type="button" id="WS1Home" value="Go" />
+    </div>
+
+    <iframe id="WS1HomeFrame" class="workspace-home-iframe" src="http://gm-pc:90" >
+        
+    </iframe>
+} 
+
+@section TabStrip1HomeBottom
+{
+    
+}
+
+
+
+
+@***********************************************************************************************************@
+
+@* WorkSpace2 Sections >> View . Home . Index >> Customize Work Space 2 For This View Using Sections Below *@
+
+@***********************************************************************************************************@
+
+@section TabStrip2Home
+{
+    <div id="WS2HomeHeader" class="workspace-home-header">
+        <input type="text" id="WS2HomeURL" class="workspace-home-header-text" value="gm-pc:89" />                    
+        <input type="button" id="WS2Home" value="Go" />
+    </div>
+
+    <iframe id="WS2HomeFrame" class="workspace-home-iframe" src="http://gm-pc:89" >
+        
+    </iframe>
+}
+
+@section TabStrip2HomeBottom
+{
+    
+}

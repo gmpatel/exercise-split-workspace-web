@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="keywords" content="jQuery Splitter, Splitter Widget, Splitter, jqxSplitter" />
+        <meta name="description" content="This page demonstrates 4 columns splitter" />
+
+        <title>@ViewBag.WorkspaceManagerTitle</title>
+
+        <link href="~/Components/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/Components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!--[if IE 7]>
+            <link href="~/Components/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet" />
+        <![endif]-->
+        <link href="~/Components/jqwidgets/styles/jqx.base.css" rel="stylesheet" />
+        <link href="~/Components/jqwidgets/styles/jqx.web.css" rel="stylesheet" />
+        <link href="~/ViewStyles/Shared.MasterLayout.css" rel="stylesheet" />
+        @RenderSection("StyleSheets", false)
+
+        <script src="~/Scripts/jquery-1.8.3.min.js"></script>
+        <script src="~/Scripts/underscore-min.js"></script>
+        <script src="~/Scripts/postmessage.js"></script>
+        <script src="~/Components/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/Components/jqwidgets/jqxcore.js"></script>
+        <script src="~/Components/jqwidgets/jqxbuttons.js"></script>
+        <script src="~/Components/jqwidgets/jqxsplitter.js"></script>
+        <script src="~/Components/jqwidgets/jqxtabs.js"></script>
+        <script src="~/Components/jqwidgets/jqxmenu.js"></script>
+        <script src="~/ViewScripts/Shared.MasterLayout.js"></script>
+        @RenderSection("JavaScripts", false)
+    </head>
+
+    <body>
+        <div class="parentToolbar">
+            <div class="row subToolbar">
+                <div class="col-lg-7 subToolbarLeftSection" >
+                    <div class="subToolbarLeftSectionTitle">@ViewBag.WorkspaceManagerTitle</div>
+                </div>
+                <div class="col-lg-5 subToolbarRightSection">
+                    <div class="pull-right subToolbarButtonSetWrapper">
+                        <div class="btn-group subToolbarButtonSet">
+                            <div id="WorkspaceLabel" class="btn btn-default">Split Workspace</div>
+                        </div>   
+
+                        <div class="btn-group subToolbarButtonSet">
+                            <a id="WS2Only" class="btn btn-default" href="#"><i class="icon-chevron-sign-left"></i></a>
+                            <a id="WSNormal" class="btn btn-default" href="#"><i class="icon-retweet"></i></a>
+                            <a id="WS1Only" class="btn btn-default" href="#"><i class="icon-chevron-sign-right"></i></a>
+                        </div>
+                
+                        <div class="btn-group subToolbarButtonSet">
+                            <a id="WSHorizontalSplit" class="btn btn-default" href="#"><i class="icon-resize-horizontal"></i></a>
+                            <a id="WSVerticalSplit" class="btn btn-default" href="#"><i class="icon-resize-vertical"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div style="border: none;" id="mainSplitter">
+            <div>
+                <div style="border: none;" id="leftSplitter">
+                    <div id="leftTopPane">
+                        <div id='jqxTabsLeft'>
+                            <ul style='margin-left: 20px;'>
+                                <li>Home</li>
+                            </ul>
+                            <div>
+                                @RenderSection("Workspace1Home", false)
+                            </div>
+                        </div>
+                    </div>
+                    <div id="leftBottomPane">
+                        @RenderSection("Workspace1HomeBottom", false)
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id='jqxTabsRight'>
+                    <ul style='margin-left: 20px;'>
+                        <li>Home</li>
+                    </ul>
+                    <div>
+                        @RenderSection("Workspace2Home", false)
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        @RenderBody()
+    </body>
+</html>

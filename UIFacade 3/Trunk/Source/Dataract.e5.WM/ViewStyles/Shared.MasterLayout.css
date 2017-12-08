@@ -1,0 +1,95 @@
+﻿html, body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#jqxTabsLeft {
+    overflow: hidden;
+}
+
+#jqxTabsLeft div {
+    overflow: hidden;
+}
+
+#jqxTabsLeftBottom {
+    overflow: hidden;
+}
+
+#jqxTabsLeftBottom div {
+    overflow: hidden;
+}
+
+#jqxTabsRight {
+    overflow: hidden;
+}
+
+#jqxTabsRight div {
+    overflow: hidden;
+}
+
+#jqxTabsRightBottom {
+    overflow: hidden;
+}
+
+#jqxTabsRightBottom div {
+    overflow: hidden;
+}
+
+#TestButton {
+    float: right; 
+    text-align: center; 
+    margin-top: 4px; 
+    margin-right: 10px;    
+}
+
+.jqxTabsContentIframe {
+    height: calc(100% - 0px);
+    width: 100%; 
+    border: none 0px; 
+}
+
+.jqxTabsHeader {
+    height: 30px;
+    background-color: gainsboro;
+    display: block;
+}
+
+.parentToolbar {
+    background-color: rgb(0,114,197);
+    height: 40px;
+}
+
+.subToolbar {
+    background-color: rgb(0,114,197);
+}
+
+.subToolbarLeftSection {
+    height: 40px;
+}
+
+.subToolbarLeftSectionTitle {
+    font-family: 'CartoGothic', 'Capriola', 'Trebuchet MS', 'Calibri';
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 6px; 
+    margin-left: 6px; 
+    color: whitesmoke;
+    border: none;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.subToolbarRightSection {
+    height: 40px;
+}
+
+.subToolbarButtonSetWrapper {
+    margin-right: 5px;
+}
+
+.subToolbarButtonSet {
+    margin-top: 3px !important
+}

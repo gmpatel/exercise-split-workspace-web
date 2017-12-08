@@ -1,0 +1,91 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Workspace 1 - Home / Index</title>
+    <script src="~/Scripts/jquery-2.0.0.min.js"></script>
+    <script src="~/Scripts/postmessage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function getPostData() {
+
+                var value = $("#Url").val().trim();
+                var text = $("#Caption").val().trim();
+
+                if (value.length == 0) {
+                    value = 'http://www.dataract.com.au';
+                }
+
+                if (value.length > 0 && value.substring(0, 4).toLowerCase() !== 'http') {
+                    value = 'http://' + value;
+                }
+
+                if (text.length == 0) {
+                    text = 'Link';
+                }
+
+                return {
+                    workspaceId: 1,
+                    url: value,
+                    caption: text
+                };
+            }
+            
+            function closeTab(index) {
+                $.pm({
+                    target: window.parent,
+                    type: "closeTab",
+                    data: {
+                        workspaceId: 1,
+                        tabIndex: index
+                    },
+                    url: document.referrer,
+                });
+            }
+
+            function post(postData) {
+                $.pm({
+                    target: window.parent,
+                    type: "openUrl",
+                    data: postData,
+                    url: document.referrer,
+                    success: function (returnedData) {
+                        var tag = '<a href="#" tabIndex="' + returnedData.result + '">Close Tab In Workspace 2 : ' + postData.caption + '</a><br /><br />';
+                        $('#main-content').append(tag);
+                    }
+                });
+            };
+
+            $('#OpenUrl').click(function () {
+                post(getPostData());
+            });
+
+            $(document).on('click', 'a', function () {
+                var tabIndex = $(this).attr("tabIndex");
+                closeTab(tabIndex);
+            });
+        });
+    </script>
+    
+    <style type="text/css">
+        body {
+            line-height: 1;
+            font-family: 'CartoGothic', 'Capriola', 'Trebuchet MS', 'Calibri';
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <span>Workspace 1 - Home</span><br /><br />        
+        <input type="text" id="Url" size="120" /><br /><br />
+        <input type="text" id="Caption" size="40" /><br /><br />
+        <input type="button" id="OpenUrl" value="Open URL" /><br /><br /><br />
+    </div>
+</body>
+</html>

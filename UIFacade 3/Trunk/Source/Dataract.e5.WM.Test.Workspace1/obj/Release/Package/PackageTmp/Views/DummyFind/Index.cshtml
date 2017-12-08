@@ -1,0 +1,71 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Find Window</title>
+
+    <script src="~/Scripts/jquery-1.3.2.min.js"></script>
+    <script src="~/Scripts/postmessage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function post(postData) {
+                $.pm({
+                    target: window.parent,
+                    type: "dataract-message",
+                    data: postData,
+                    url: document.referrer,
+                    success: function (returnedData) {
+                        // Do
+                    }
+                });
+            };
+
+            function getWorkReferencePostData(ref) {
+                return {
+                    messageCode: "openSingleWork",
+                    workspaceId: 1,
+                    workReference: ref
+                };
+            }
+
+            $('#button1').click(function () {
+                post(getWorkReferencePostData("10117"));
+            });
+            
+            $('#button2').click(function () {
+                post(getWorkReferencePostData("10118"));
+            });
+            
+            $('#button3').click(function () {
+                post(getWorkReferencePostData("10119"));
+            });
+            
+            $('#button4').click(function () {
+                post(getWorkReferencePostData("10120"));
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        body {
+            line-height: 1;
+            font-family: 'CartoGothic', 'Capriola', 'Trebuchet MS', 'Calibri';
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><span>Dummy Find @ViewBag.FindType : @ViewBag.findNumber</span></h1><br /><br />        
+        <input type="button" id="button1" value="Work : 10117"/>
+        <input type="button" id="button2" value="Work : 10118"/>
+        <input type="button" id="button3" value="Work : 10119"/>
+        <input type="button" id="button4" value="Work : 10120"/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Workspace 1 - Home / Index 4</title>
+    <script src="~/Scripts/jquery-2.0.0.min.js"></script>
+    <script src="~/Scripts/postmessage.js"></script>
+    <script src="~/Scripts/date.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function post(postData) {
+                $.pm({
+                    target: window.parent,
+                    type: "dataract-message",
+                    data: postData,
+                    url: document.referrer,
+                    success: function (returnedData) {
+                        var log;
+                        
+                        if (postData.messageCode == "openWork")
+                            log = '<li class="green">' + new Date().toString("HH:mm:ss") + ' >> Work : ' + postData.workReference + ' >> Message Posted To Workspace Manager ( Acknowledgement : ' + returnedData.message + ' )</li>';
+                        else if (postData.messageCode == "openPolicy")
+                            log = '<li class="green">' + new Date().toString("HH:mm:ss") + ' >> Policy : ' + postData.policyNumber + ' >> Message Posted To Workspace Manager ( Acknowledgement : ' + returnedData.message + ' )</li>';
+                        else
+                            log = '';
+                        
+                        if(log !== '') $('#LogList').append(log);
+                    }
+                });
+            };
+
+            function getWorkReferencePostData(ref) {
+                return {
+                    messageCode: "openWork",
+                    workspaceId: 1,
+                    workReference: ref
+                };
+            }
+            
+            function getPolicyNumberPostData(ref) {
+                return {
+                    messageCode: "openPolicy",
+                    workspaceId: 1,
+                    policyNumber: ref
+                };
+            }
+
+            $('#OpenWork').click(function () {
+                var control = $("#WorkReference");
+                var value = control.val().trim();
+
+                if (value === "") {
+                    alert('Please enter correct e5 Work Reference number (only from demo numbers)');
+                } else {
+                    control.val("");
+                    post(getWorkReferencePostData(value));
+                }
+            });
+
+            $('#OpenPolicy').click(function () {
+                var control = $("#PolicyNumber");
+                var value = control.val().trim();
+
+                if (value === "") {
+                    alert('Please enter correct Policy Number (only from demo numbers)');
+                } else {
+                    control.val("");
+                    post(getPolicyNumberPostData(value));
+                }
+            });
+        });
+    </script>
+    
+    <style type="text/css">
+        body {
+            line-height: 1.28;
+            font-family: 'CartoGothic', 'Capriola', 'Trebuchet MS', 'Calibri';
+            font-size: 14px;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .maroon {
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <h1>e5 Application Screen</h1>
+        <div id="main-content">
+            <p>Work Reference Number : </p>
+            <input type=text id="WorkReference" list=workNumbers >
+            <datalist id=workNumbers >
+                <option> 10924
+                <option> 10948
+                <option> 10902
+                <option> 10916
+                <option> 10904
+            </datalist>
+            <input type="button" id="OpenWork" value="Open Work" /><br /><br />
+            
+            <p>Demo Work Reference Numbers : </p>
+            <ul id="SampleWorkReferenceList" class="maroon">
+                <li>10924</li>
+                <li>10948</li>
+                <li>10902</li>
+                <li>10916</li>
+                <li>10904</li>                
+            </ul>
+            <br />
+            
+            
+            <p>Policy Number : </p>
+            <input type=text id="PolicyNumber" list=policyNumbers >
+            <datalist id=policyNumbers >
+                <option> 88102
+                <option> 87990
+                <option> 89818
+                <option> 98181
+                <option> 99191
+            </datalist>
+            <input type="button" id="OpenPolicy" value="Open Policy" /><br /><br />
+            
+            <p>Demo Policy Numbers : </p>
+            <ul id="SamplePolicyNumberList" class="maroon">
+                <li>88102</li>
+                <li>87990</li>
+                <li>89818</li>
+                <li>98181</li>
+                <li>99191</li>                
+            </ul>
+            <br />
+
+            
+            <p>Event Log : </p>
+            <ul id="LogList">
+            </ul>
+            
+        </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿.workspace-home-header {
+    height: 30px; 
+    background-color: gainsboro;
+    display: block
+}
+
+.workspace-home-header-text {
+    width: calc(100% - 50px); 
+    margin-top: 6px; 
+    margin-left: 6px; 
+    background-color: whitesmoke; 
+    color: gray;
+    border: none;
+}
+
+.workspace-home-iframe {
+    border: none 0px;
+    width: 100%;
+    height: calc(100% - 30px);
+}

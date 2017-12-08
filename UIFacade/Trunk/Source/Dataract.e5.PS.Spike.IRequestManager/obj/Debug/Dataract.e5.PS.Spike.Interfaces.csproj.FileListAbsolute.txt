@@ -1,0 +1,4 @@
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade\Trunk\Source\Dataract.e5.PS.Spike.IRequestManager\bin\Debug\Dataract.e5.PS.Spike.Interfaces.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade\Trunk\Source\Dataract.e5.PS.Spike.IRequestManager\bin\Debug\Dataract.e5.PS.Spike.Interfaces.pdb
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade\Trunk\Source\Dataract.e5.PS.Spike.IRequestManager\obj\Debug\Dataract.e5.PS.Spike.Interfaces.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade\Trunk\Source\Dataract.e5.PS.Spike.IRequestManager\obj\Debug\Dataract.e5.PS.Spike.Interfaces.pdb

@@ -1,0 +1,33 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Capriola);
+
+@font-face {
+  font-family: 'CartoGothic';
+  font-style: normal;
+  font-weight: normal;
+  src: url(/Resources/Fonts/CartoGothic/CartoGothicStd-Book-webfont.eot);
+  src: url(/Resources/Fonts/CartoGothic/CartoGothicStd-Book-webfont.eot) format('embedded-opentype'), url(/Resources/Fonts/CartoGothic/CartoGothicStd-Book-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'CartoGothicItalic';
+    src: url('/Resources/Fonts/CartoGothic/CartoGothicStd-Italic-webfont.eot');
+    src: url('/Resources/Fonts/CartoGothic/CartoGothicStd-Italic-webfont.eot') format('embedded-opentype'), url('~\Resources\Fonts\CartoGothic\CartoGothicStd-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CartoGothicBold';
+    src: url('/Resources/Fonts/CartoGothic/CartoGothicStd-Bold-webfont.eot');
+    src: url('/Resources/Fonts/CartoGothic/CartoGothicStd-Bold-webfont.eot') format('embedded-opentype'), url('~\Resources\Fonts\CartoGothic\CartoGothicStd-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CartoGothicBoldItalic';
+    src: url('/Resources/Fonts/CartoGothic/CartoGothicStd-BoldItalic-webfont.eot');
+    src: url('/Resources/Fonts/CartoGothic/CartoGothicStd-BoldItalic-webfont.eot') format('embedded-opentype'), url('\Resources\Fonts\CartoGothic\CartoGothicStd-BoldItalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

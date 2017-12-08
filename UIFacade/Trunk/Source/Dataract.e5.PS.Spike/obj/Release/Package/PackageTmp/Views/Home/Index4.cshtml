@@ -1,0 +1,96 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout4.cshtml";
+}
+
+@***********************************************************************************************************@
+
+@* StyleSheets Section >> View . Home . Index >> Add If Any Custom StyleSheets For This View               *@
+
+@***********************************************************************************************************@
+
+@section StyleSheets { 
+    @{
+        <link href="~/Styles/Home.Index4.css" rel="stylesheet" />
+    } 
+}
+
+
+
+
+@***********************************************************************************************************@
+
+@* JavaScripts Section >> View . Home . Index >> Add If Any Custom JavaScripts For This View               *@
+
+@***********************************************************************************************************@
+
+@section JavaScripts { 
+    @{
+        <script src="~/ViewScripts/Home.Index4.js"></script>
+    } 
+}
+
+
+
+
+@***********************************************************************************************************@
+
+@* WorkSpace1 Sections >> View . Home . Index >> Customize Work Space 1 For This View Using Sections Below *@
+
+@***********************************************************************************************************@
+
+@section TabStrip1Home
+{
+    <iframe id="WS1HomeFrame" class="workspace-iframe" src="http://gm-pc/TestWorkSpace1/WS1/Index4" > @* http://localhost:52784/WS1/Index4 *@
+        
+    </iframe>
+} 
+
+
+@section WorkSpace1_Bottom {
+    <div style="padding: 10px">
+        <span>Workspace 1 - Home URL</span>
+        <br />
+        <br />        
+        <input type="text" id="WS1HomeURL" size="120" value="http://gm-pc/TestWorkSpace1/WS1/Index4" list=Home1URLs />
+        <datalist id=Home1URLs >
+            <option> http://localhost:52784/WS1/Index4
+            <option> http://gm-pc/TestWorkSpace1/WS1/Index4
+            <option> http://e5ioofgmdev/TestWorkSpace1/WS1/Index4
+        </datalist>
+        <br />
+        <br />
+        <input type="button" id="WS1Home" value="Open URL" />
+    </div>
+}
+
+
+
+@***********************************************************************************************************@
+
+@* WorkSpace2 Sections >> View . Home . Index >> Customize Work Space 2 For This View Using Sections Below *@
+
+@***********************************************************************************************************@
+
+@section TabStrip2Home
+{
+    <iframe id="WS2HomeFrame" class="workspace-iframe" src="http://gm-pc/TestWorkSpace2/WS2/Index4" > @* http://localhost:52785/WS2/Index4 *@
+        
+    </iframe>
+}
+
+@section WorkSpace2_Bottom { 
+    <div style="padding: 10px">
+        <span>Workspace 2 - Home URL</span>
+        <br />
+        <br />        
+        <input type="text" id="WS2HomeURL" size="120" value="http://gm-pc/TestWorkSpace2/WS2/Index4" list="Home2URLs" />
+        <datalist id=Home2URLs >
+            <option> http://localhost:52785/WS2/Index4
+            <option> http://gm-pc/TestWorkSpace2/WS2/Index4
+            <option> http://e5ioofgmdev/TestWorkSpace2/WS2/Index4
+        </datalist>
+        <br />
+        <br />
+        <input type="button" id="WS2Home" value="Open URL" />
+    </div>
+}

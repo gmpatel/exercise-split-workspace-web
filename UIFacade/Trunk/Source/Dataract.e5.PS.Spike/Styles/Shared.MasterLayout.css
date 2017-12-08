@@ -1,0 +1,82 @@
+﻿@import url(/Resources/Fonts/FontFace.css);
+
+body, html {
+    margin:0;
+    height: 100%;
+}
+
+html {
+    overflow:hidden;
+}
+
+body {
+    line-height: 1;
+    font-family: 'CartoGothic', 'Capriola', 'Trebuchet MS', 'Calibri';
+    font-size: 14px;
+}
+
+#page-container {
+    background-color:#ccc;
+    height: 100%;
+}       
+
+#Horizontal {
+    height: 100%;
+    border: 0px;
+}
+
+#Vertical-Left {
+    height: 100%;
+    border: 0px;
+}
+
+#Vertical-Left-Horizontal {
+    height: 100%;
+    border: 0px;
+}
+
+#Vertical-Right-Horizontal {
+    height: 100%;
+    border: 0px;
+}
+
+#Vertical-Right {
+    height: 100%;
+    border: 0px;
+}
+
+#pane-left--top--left-content {
+    height: 100%;
+    background-color: beige;
+    overflow: hidden;
+}
+
+#pane-left--top--right-content {
+    height: 100%;
+    background-color: white;
+    overflow: hidden; 
+}
+
+#pane-left--bottom-content {
+    height: 100%;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+#pane-right--top--left-content {
+    height: 100%;
+    background-color: gainsboro;
+    overflow: hidden;
+}
+
+#pane-right--top--right-content {
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+#pane-right--bottom-content {
+    height: 100%;
+    background-color: darkgrey;
+    overflow: hidden;
+}

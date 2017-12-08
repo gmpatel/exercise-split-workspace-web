@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="../Scripts/jquery.cookies.2.2.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Test").click(function () {
+                alert('Fired');
+                $.cookies.set("example", "100");
+            });
+            
+            var test = $.cookies.get("example");
+            alert(test);
+        });
+    </script>   
+</head>
+<body>
+    <div id="container">
+        Test
+    </div>
+
+    <button id="Test">Get External Content</button>
+</body>
+</html>

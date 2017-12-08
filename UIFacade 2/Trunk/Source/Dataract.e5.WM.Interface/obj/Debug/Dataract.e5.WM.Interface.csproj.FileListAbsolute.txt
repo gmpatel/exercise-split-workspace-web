@@ -1,0 +1,4 @@
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 2\Trunk\Source\Dataract.e5.WM.Interface\bin\Debug\Dataract.e5.WM.Interface.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 2\Trunk\Source\Dataract.e5.WM.Interface\bin\Debug\Dataract.e5.WM.Interface.pdb
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 2\Trunk\Source\Dataract.e5.WM.Interface\obj\Debug\Dataract.e5.WM.Interface.dll
+C:\Projects\sydtfs2010 (2)\Professional Services Shared\Framework\Spikes\UIFacade 2\Trunk\Source\Dataract.e5.WM.Interface\obj\Debug\Dataract.e5.WM.Interface.pdb
